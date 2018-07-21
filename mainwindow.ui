@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>530</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Supermarket Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow
+{background-image:url(:/myimages/BG.png);}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="checkOutButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="setButton">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>60</y>
+      <width>95</width>
+      <height>95</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/myimages/blankButton.png);
+font: 11pt &quot;Cooper Black&quot;;
+
+color:rgba(208,233,255);
+border-radius:3px;
+</string>
+    </property>
+    <property name="text">
+     <string>SET
+DISCOUNT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>165</y>
+      <width>95</width>
+      <height>95</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/myimages/giftButton.png);
+color:rgba(208,233,255);
+border-radius:3px;
+font: 11pt &quot;Arial Rounded MT Bold&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>530</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(208.233.255);</string>
+   </property>
+   <widget class="QMenu" name="menuMenu_M">
+    <property name="title">
+     <string>Menu(&amp;M)</string>
+    </property>
+    <addaction name="actionChange_Password"/>
+    <addaction name="actionExit_E"/>
+   </widget>
+   <widget class="QMenu" name="menuCommodity_C">
+    <property name="title">
+     <string>Commodity(&amp;C)</string>
+    </property>
+    <addaction name="actionGoods_In_G"/>
+    <addaction name="actionModify_Stock_Information_M"/>
+    <addaction name="actionStock_Information_I"/>
+   </widget>
+   <widget class="QMenu" name="menuMembers_M">
+    <property name="title">
+     <string>Members(&amp;M)</string>
+    </property>
+    <addaction name="actionNew_Member_N"/>
+    <addaction name="actionDelete_Member_D"/>
+    <addaction name="actionView_All_V"/>
+   </widget>
+   <widget class="QMenu" name="menuSales_S">
+    <property name="title">
+     <string>Sales(&amp;S)</string>
+    </property>
+    <addaction name="actionDaily"/>
+    <addaction name="actionMonthly"/>
+    <addaction name="actionSearch"/>
+   </widget>
+   <addaction name="menuMenu_M"/>
+   <addaction name="menuCommodity_C"/>
+   <addaction name="menuMembers_M"/>
+   <addaction name="menuSales_S"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionChange_Password">
+   <property name="text">
+    <string>Change Password</string>
+   </property>
+  </action>
+  <action name="actionExit_E">
+   <property name="text">
+    <string>Exit(&amp;E)</string>
+   </property>
+  </action>
+  <action name="actionStock_Information_I">
+   <property name="text">
+    <string>Stock Information(&amp;I)</string>
+   </property>
+  </action>
+  <action name="acctionOvertime_Goods_O">
+   <property name="text">
+    <string>Overtime Goods(&amp;O)</string>
+   </property>
+  </action>
+  <action name="actionGoods_In_G">
+   <property name="text">
+    <string>Goods In(&amp;G)</string>
+   </property>
+  </action>
+  <action name="actionModify_Stock_Information_M">
+   <property name="text">
+    <string>Modify Stock Information(&amp;M)</string>
+   </property>
+  </action>
+  <action name="actionNew_Member_N">
+   <property name="text">
+    <string>New Member(&amp;N)</string>
+   </property>
+  </action>
+  <action name="actionDelete_Member_D">
+   <property name="text">
+    <string>Search &amp;&amp; Modify(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionUpdate_U">
+   <property name="text">
+    <string>Update(&amp;U)</string>
+   </property>
+  </action>
+  <action name="actionSearch_S">
+   <property name="text">
+    <string>Search(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionView_All_V">
+   <property name="text">
+    <string>View All(&amp;V)</string>
+   </property>
+  </action>
+  <action name="actionDaily">
+   <property name="text">
+    <string>Daily</string>
+   </property>
+  </action>
+  <action name="actionMonthly">
+   <property name="text">
+    <string>Monthly</string>
+   </property>
+  </action>
+  <action name="actionYearly">
+   <property name="text">
+    <string>Yearly</string>
+   </property>
+  </action>
+  <action name="actionSearch">
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

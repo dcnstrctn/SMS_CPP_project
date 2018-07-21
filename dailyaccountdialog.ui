@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dailyAccountDialog</class>
+ <widget class="QDialog" name="dailyAccountDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>399</width>
+    <height>254</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Daily Account</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+	font: 13pt &quot;Arial Rounded MT Bold&quot;;
+background-color:rgba(1,25,53,200);
+color:rgba(208,233,255);
+border-color:rgba(1,25,53,90);
+border-radius:3px;
+}
+QLabel
+{
+font: 11pt &quot;Arial&quot;;
+color:rgb(1, 25, 53);
+}
+QLineEdit
+{
+border-color:rgba(255,255,255,200);
+font: 11pt &quot;Arial&quot;;
+border-color:rgba(1,25,53,50);
+           border-radius:3px;
+         background-color:rgba(255,255,255);
+      color:rgba(1,25,53);
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="exitButt">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>210</y>
+     <width>80</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>331</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="TotalAccount">
+      <property name="text">
+       <string>Total Account:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Daily Profit:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="displayTotalAccount">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="displayDailyProfit">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_year">
+      <property name="text">
+       <string>Year:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="enterYear"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_month">
+      <property name="text">
+       <string>Month:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="enterMonth"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_day">
+      <property name="text">
+       <string>Day:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="enterDay"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="searchButt">
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>399</width>
+     <height>254</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>exitButt</zorder>
+  <zorder>gridLayoutWidget</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/myimages">
+        <file>beginner_BG.png</file>
+        <file>mainWindow_BG1.png</file>
+        <file>shoppingButton.png</file>
+        <file>shoppingCart.png</file>
+        <file>BG.png</file>
+        <file>member_BG.png</file>
+        <file>blankButton.png</file>
+        <file>giftButton.png</file>
+    </qresource>
+</RCC>

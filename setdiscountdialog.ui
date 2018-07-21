@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setDiscountDialog</class>
+ <widget class="QDialog" name="setDiscountDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Set Discount</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+	font: 13pt &quot;Arial Rounded MT Bold&quot;;
+background-color:rgba(1,25,53,200);
+color:rgba(208,233,255);
+border-color:rgba(1,25,53,90);
+border-radius:3px;
+}
+QLabel
+{
+font: 11pt &quot;Arial&quot;;
+color:rgb(1, 25, 53);
+}
+QLineEdit
+{
+border-color:rgba(255,255,255,200);
+font: 11pt &quot;Arial&quot;;
+border-color:rgba(1,25,53,50);
+           border-radius:3px;
+         background-color:rgba(255,255,255);
+      color:rgba(1,25,53);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="setDiscount_label">
+      <property name="text">
+       <string>Set Discount:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="enterDiscount"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="okButt">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>180</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>180</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

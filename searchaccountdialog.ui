@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>searchAccountDialog</class>
+ <widget class="QDialog" name="searchAccountDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Search Account</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+	font: 13pt &quot;Arial Rounded MT Bold&quot;;
+background-color:rgba(1,25,53,200);
+color:rgba(208,233,255);
+bordercolor:rgba(1,25,53,90);
+border-radius:3px;
+}
+QLabel
+{
+font: 11pt &quot;Arial Rounded MT Bold&quot;;
+color:rgb(1, 25, 53);
+}
+QLineEdit
+{
+bordercolor:rgba(255,255,255,200);
+font: 11pt &quot;Arial Rounded MT Bold&quot;;
+border-color:rgba(1,25,53,50);
+           border-radius:3px;
+         background-color:rgba(208,233,255);
+      color:rgba(1,25,53);
+}
+QRadioButton
+{
+font: 11pt &quot;Arial Rounded MT Bold&quot;;
+color:rgb(1, 25, 53);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>371</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_from">
+      <property name="text">
+       <string>From:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_month">
+      <property name="text">
+       <string>Month:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLabel" name="label_day">
+      <property name="text">
+       <string>Day:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_year">
+      <property name="text">
+       <string>Year:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="enterFromYear"/>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLineEdit" name="enterFromMonth"/>
+    </item>
+    <item row="0" column="6">
+     <widget class="QLineEdit" name="enterFromDay"/>
+    </item>
+    <item row="1" column="5">
+     <widget class="QLabel" name="label_toDay">
+      <property name="text">
+       <string>Day:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label_toYear">
+      <property name="text">
+       <string>Year:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_to">
+      <property name="text">
+       <string>To:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="label_toMonth">
+      <property name="text">
+       <string>Month:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QLineEdit" name="enterToDay"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="enterToYear"/>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLineEdit" name="enterToMonth"/>
+    </item>
+    <item row="2" column="6">
+     <widget class="QPushButton" name="searchButt">
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="exitButt">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>420</y>
+     <width>80</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="showAccountTxt">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>103</y>
+     <width>591</width>
+     <height>301</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>661</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>gridLayoutWidget</zorder>
+  <zorder>exitButt</zorder>
+  <zorder>showAccountTxt</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
